@@ -47,3 +47,6 @@ Thumbs.db
 .env.local
 .env.development
 .env.production
+
+#useless java setup
+projects/second/src/app/service/Oracle_JDK-23/
