@@ -1,0 +1,87 @@
+<app-home></app-home>
+
+<div
+  class="container d-flex justify-content-center align-items-center min-vh-100"
+>
+  <div class="card shadow-lg p-4 rounded-4 custom-card">
+    <h2 class="text-center mb-4 text-primary">User Registration</h2>
+    <form [formGroup]="user" (ngSubmit)="registerUser()">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="username" class="form-label fw-bold">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter username"
+              formControlName="username"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bold">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter password"
+              formControlName="password"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="firstName" class="form-label fw-bold">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="Enter first name"
+              formControlName="firstName"
+            />
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="lastName" class="form-label fw-bold">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Enter last name"
+              formControlName="lastName"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              formControlName="email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="role" class="form-label fw-bold">Role</label>
+            <select class="form-select" id="role" formControlName="role">
+              <option selected disabled>Select Role</option>
+              <option value="ADMIN">Admin</option>
+              <option value="MANAGER">Manager</option>
+              <option value="USER">User</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 fw-bold">
+        Register
+      </button>
+    </form>
+  </div>
+</div>

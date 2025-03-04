@@ -1,0 +1,17 @@
+<h1>this is the api calling</h1>
+
+<br />
+<br />
+<button (click)="getData()">All Data Fetch</button>
+
+
+
+<table>
+    <tr *ngFor="let todo of todo">
+        <td>{{todo.id}}</td>
+        <td>{{todo.todo}}</td>
+        <td>{{todo.completed}}</td>
+        <td>{{todo.userId}}</td>
+
+    </tr>
+</table>

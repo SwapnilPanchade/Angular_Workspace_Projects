@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-card {
+  width: 550px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}

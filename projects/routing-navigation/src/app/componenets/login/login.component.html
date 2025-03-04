@@ -1,0 +1,40 @@
+<app-home></app-home>
+<div
+  class="container d-flex justify-content-center align-items-center min-vh-100"
+>
+  <div class="card shadow-lg p-4 rounded-4 custom-card">
+    <h2 class="text-center mb-4 text-primary">User Login</h2>
+    <form [formGroup]="user" (ngSubmit)="loginUser()">
+      <div class="mb-3">
+        <label for="username" class="form-label fw-bold">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Enter username"
+          formControlName="username"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label fw-bold">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Enter password"
+          formControlName="password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 fw-bold">Login</button>
+
+      <div class="text-center mt-3">
+        <p>
+          Don't have an account?
+          <a href="/register" class="text-primary fw-bold">Register here</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
