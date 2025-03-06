@@ -8,6 +8,10 @@ import { Observable } from "rxjs/internal/Observable";
 export class UserService {
   constructor(private http: HttpClient) {}
 
+  getAllUsers(): Observable<any[]> {
+    const api = "http://localhost:8091/user/get-all-user";
+    return this.http.get<any[]>(api);
+  }
   login(user: any): Observable<any> {
     const apiUrl = "http://localhost:8091/user/login-user";
 

@@ -64,3 +64,13 @@
 .nav-links li:last-child {
   margin-right: 0;
 }
+.logout a {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.logout a:hover {
+  background: #cc0000;
+  color: white;
+  border-radius: 5px;
+}

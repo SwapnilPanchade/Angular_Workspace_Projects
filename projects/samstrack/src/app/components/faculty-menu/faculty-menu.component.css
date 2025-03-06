@@ -1,0 +1,58 @@
+.menu {
+  width: 250px;
+  height: 100vh;
+  background: #007bff;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background: #0056b3;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 200px;
+  }
+}
+.logout a {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.logout a:hover {
+  background: #cc0000;
+  color: white;
+  border-radius: 5px;
+}

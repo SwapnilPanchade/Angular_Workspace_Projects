@@ -10,11 +10,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./register.component.css"],
 })
 export class RegisterComponent {
-  constructor(
-    private router: Router,
-    private service: UserService,
-    private http: HttpClient
-  ) {}
+  constructor(private router: Router, private service: UserService) {}
   user = new FormGroup({
     username: new FormControl(),
     password: new FormControl(),
@@ -26,6 +22,7 @@ export class RegisterComponent {
   register() {
     this.service.register(this.user.value).subscribe((res) => {
       alert(res);
+      this.user.reset();
       this.router.navigateByUrl("/register");
     });
   }
