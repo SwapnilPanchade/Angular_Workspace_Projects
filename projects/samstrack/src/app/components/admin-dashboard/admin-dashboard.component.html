@@ -1,1 +1,41 @@
-<p>admin-dashboard works!</p>
+<div class="admin-container">
+  <!-- Top Navbar -->
+  <app-admin-menu></app-admin-menu>
+  <!-- Dashboard Content -->
+  <div class="dashboard-content">
+    <h1>Welcome, Admin!</h1>
+
+    <!-- Quick Stats Section -->
+    <div class="stats-container">
+      <div class="stat-card users">
+        <i class="fas fa-users"></i>
+        <h2>Users</h2>
+        <p>150 Registered</p>
+      </div>
+      <div class="stat-card students">
+        <i class="fas fa-user-graduate"></i>
+        <h2>Students</h2>
+        <p>450 Enrolled</p>
+      </div>
+      <div class="stat-card attendance">
+        <i class="fas fa-chart-line"></i>
+        <h2>Attendance</h2>
+        <p>80% Avg</p>
+      </div>
+    </div>
+
+    <!-- Recent Activity / Quick Links -->
+    <div class="quick-actions">
+      <h2>Quick Actions</h2>
+      <button class="action-btn">
+        <i class="fas fa-user-plus"></i> Register User
+      </button>
+      <button class="action-btn">
+        <i class="fas fa-user-graduate"></i> Add Student
+      </button>
+      <button class="action-btn">
+        <i class="fas fa-chart-bar"></i> View Attendance
+      </button>
+    </div>
+  </div>
+</div>

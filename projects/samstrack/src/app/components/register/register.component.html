@@ -1,1 +1,75 @@
-<p>register works!</p>
+<div class="register-container">
+  <app-admin-menu></app-admin-menu>
+  <div class="register-box">
+    <h2>Register</h2>
+    <form [formGroup]="user" (ngSubmit)="register()">
+      <div class="form-grid">
+        <div class="column">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter username"
+              required
+              formControlName="username"
+            />
+          </div>
+          <div class="input-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter first name"
+              required
+              formControlName="firstName"
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email"
+              required
+              formControlName="email"
+            />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter password"
+              required
+              formControlName="password"
+            />
+          </div>
+          <div class="input-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter last name"
+              required
+              formControlName="lastName"
+            />
+          </div>
+          <div class="input-group">
+            <label for="role">Role</label>
+            <select id="role" required formControlName="role">
+              <option value="" disabled selected>Select Role</option>
+              <option value="admin">Admin</option>
+              <option value="faculty">Faculty</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </div>
+</div>
